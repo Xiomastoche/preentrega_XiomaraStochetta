@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 98%;
+    margin: auto;
+}
+
+header {
+    background: linear-gradient(to left, rgb(8, 154, 194), lightblue);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+  
+.col {
+    width: 100%;
+}
+
+.nav_list {
+    width: 100%;
+    padding: 2%;
+    list-style: none;
+    padding-top: auto;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.nav_link {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li {
+    padding-top: 0.5rem;
+}
+
+.first_section {
+    background-image: url(./imagenes/backhielo.PNG);
+    height: 300px;
+    padding: 8rem 0 0 0;
+    width: 100%;
+}
+
+.first-title {
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    color: black;
+}
+
+h1 {
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+} 
+
+.second_section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+  
+.second_title {
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 2rem;
+} 
+
+.container_text {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1.0rem;
+    margin-bottom: 30px;
+}
+  
+.img_beneficios {
+    width: 80px;
+}
+
+.third_section {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.btn_card {
+    text-decoration: none;
+    align-items: center;
+    background: rgb(47, 57, 108);
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.img_patines {
+    margin-top: 20px;
+    filter: drop-shadow(0 0 15px #595858);
+}
+
+footer {
+    background-color: rgb(108, 186, 207);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+  
+.footer_text {
+    padding-top: 0.5rem;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+  
+.footer_items {
+    padding-top: 0.8rem;
+    padding-bottom: 0.5rem;
+}
+  
+.footer_copyright {
+    padding: 0.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* PAGINA CONTACTO */
+
+.container_contact_item {
+    width: 50px;
+    padding-top: 3rem;
+    margin: auto;
+}
+  
+.form {
+    padding-top: 1.5rem;
+    display: block;
+}
+  
+.form-control {
+    font-size: 15px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 0.2rem;
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+    margin-bottom: 0.8rem;
+}
+  
+.button-submit {
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 0.6rem;
+    padding-bottom: 0.5rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+  
+/* PAGINA NOSOTROS */
+  
+.img_nosotros {
+    width: 300px;
+    padding-top: 0px;
+}
+
+/* PAGINA TARIFAS Y HORARIOS */
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(242, 242, 253);
+}
+  
+th, td {
+    padding: 0.4rem;
+    font-size: 11px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* PAGINA CLASES */
+  
+.img_clases {
+    width: 200px;
+    max-width: 100%;
+}
+
+.section_clases {
+    max-width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: white;
+}
+  
+.grid_item {
+    background-color: rgb(193, 214, 226);
+    padding: 1rem 1rem 1rem 1rem;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+
+.grid_item h3 {
+    font-weight: 400;
+    font-size: 25px;
+    color:rgb(25, 25, 113);
+}
+
+.grid_item p {
+    margin-top: 0.8rem;
+    margin-bottom: 1.2px;
+    font-size: 13px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .nav_list {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        justify-content: space-around;
+    }
+    .nav_link {
+        margin-right: 1.5rem;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .first-title {
+        font-size: 35px;
+        padding-bottom: 50px;
+        padding-top: 10px;
+    }
+    .first_section {
+        background-image: url(./imagenes/patin2.jpg);
+        max-width: 100%;
+        background-size: cover;
+        height: 500px;
+        padding-top: 200px;
+        background-position: center;
+    }
+    .th, td {
+        font-size: 14px;
+    }
+    .grid_container {
+        display: grid;
+        font-size: 10px;
+        grid-template-columns: 3fr 3fr;
+        padding-top: 50px;
+    }   
+}
+
+@media (min-width: 1024px) {
+    .nav_link:hover {
+        opacity: 2;
+        color: blanchedalmond;
+    }
+    .first-title {
+        font-size: 45px;
+    }
+    .first_section {
+        background-image: url(./imagenes/patin2.jpg);
+        max-width: 100%;
+        background-size: cover;
+        height: 550px;
+        padding-top: 200px;
+        background-position: center;
+    }
+    .container_text {
+        font-size: 16px;
+    }
+    .grid_container {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        padding-top: 50px;
+    }
+    .grid_item:hover {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-3%);
+    }
+    .grid_item .btn_card {
+        background-color: rgb(193, 214, 226);
+        border: 1px solid rgb(14, 14, 74);
+        color:  rgb(14, 14, 74);
+        transition: all 400ms ease;
+    }
+    .grid_item .btn_card:hover {
+        background: rgb(14, 14, 74);
+        color: #fff;
+    }
+    .th, td {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

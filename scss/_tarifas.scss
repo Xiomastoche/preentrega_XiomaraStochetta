@@ -1,0 +1,20 @@
+table {
+    width: $maxwidth;
+    border-collapse: collapse;
+    background-color: $blue-light;
+}
+  
+th, td {
+    padding: 0.4rem;
+    font-size: 11px;
+    font-family: $fontSegoe;
+
+    @include tablet {
+        font-size: $font-size-text;
+    }
+
+    @include destok {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,56 @@
+.img_clases {
+    width: 200px;
+}
+
+.grid_container {
+    background-color: $white;
+
+    .grid_item {
+        background-color: $blue-light;
+        padding: 1rem 1rem 1rem 1rem;
+        border: 10px solid $white;
+        border-radius: 20px;
+        box-shadow: 0 1px 2px 0 $gray-base;
+        margin: 10px;
+    
+        h3 {
+            font-size: 25px;
+            color: $blue-dark;
+        }
+    
+        p {
+            font-size: 13px;
+        }
+
+        @include destok {
+            &:hover {
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+                transform: translateY(-3%);
+            }
+            .btn_card {
+                background-color: $blue-light;
+                border: 1px solid $blue-dark;
+                color: $blue-dark;
+                transition: all 400ms ease;
+
+                &:hover {
+                    background: $blue-dark;
+                    color: $white;
+                }
+            }
+            
+        }
+    }
+
+    @include tablet {
+        display: grid;
+        font-size: 10px;
+        grid-template-columns: 3fr 3fr;
+        padding-top: 50px;
+    }
+
+    @include destok {
+        grid-template-columns: 2fr 2fr 2fr;
+        padding-top: 20px;
+    }
+}

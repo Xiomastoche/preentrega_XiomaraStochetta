@@ -1,0 +1,11 @@
+@mixin tablet {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin destok {
+    @media (min-width: $destok) {
+        @content;
+    }
+}

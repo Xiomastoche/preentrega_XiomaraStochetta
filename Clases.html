@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5625/5625805.png" type="image/x-icon"/>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Escuela On Ice</title>
+    <meta name="description" content="Clases de patin sobre hielo para todas las edades y niveles. Los niveles son inicial, medio y avanzado.">
+    <meta name="keywords" content="nivel, inicial, medio, avanzado, patinaje artistico, clases de patin, patin sobre hielo, ">
+    <title>Escuela On Ice| Clases</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar sticky-top navbar-expand-md">
-          <div class="container">
+    <header class="header fixed-top px-2">
+        <nav class="navbar navbar-expand-md">
+          <div class="container-fluid">
             <a class="navbar-brand" href="#">
               <img src="./imagenes/logopatines.png" alt="" width="230" style="vertical-align:top"/>
             </a>
@@ -22,22 +24,25 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-center px-2">
-                    <li><a class="nav_link" href="index.html">Inicio</a></li>
-                    <li><a class="nav_link" href="Nosotros.html">Nosotros</a></li>
-                    <li><a class="nav_link" href="Clases.html">Clases</a></li>
-                    <li><a class="nav_link" href="Tarifasyhorarios.html">Tarifas y horarios</a></li>
-                    <li><a class="nav_link" href="Contacto.html">Contacto</a></li>
+                    <li class="navbar-nav_item"><a class="navbar-nav_link" href="index.html">Inicio</a></li>
+                    <li class="navbar-nav_item"><a class="navbar-nav_link" href="Nosotros.html">Nosotros</a></li>
+                    <li class="navbar-nav_item"><a class="navbar-nav_link" href="Clases.html">Clases</a></li>
+                    <li class="navbar-nav_item"><a class="navbar-nav_link" href="Tarifasyhorarios.html">Tarifas y horarios</a></li>
+                    <li class="navbar-nav_item"><a class="navbar-nav_link" href="Contacto.html">Contacto</a></li>
                 </ul>
             </div>
           </div>
         </nav>
     </header>
     <main>
-        <section class="section_clases text-center">
+        <section class="second_section text-center">
             <div class="container">
-                <div class="row">
+                <div class="row pt-5">
                     <div class="col">
-                        <h2 class="first-title"> Nuestras clases </h2>
+                        <h2 class="second-title"> Nuestras clases</h2>
+                        <svg width="50%" height="60px" viewBox="0 0 250 200">
+                            <line x1="30" y1="35" x2="220" y2="35" style="stroke:rgb(123, 161, 203); stroke-width:20; stroke-linecap: butt"></line>
+                        </svg>
                     </div>
                 </div>
                 <div class="row">
@@ -46,31 +51,31 @@
                 <div class="grid_container">
                     <div class="grid_item">
                         <div class="col">
-                            <h3 class="second_title"> Nivel Inicial</h3>
+                            <h3 class="second_title fw-normal pb-3"> Nivel Inicial</h3>
                         </div>
                         <div class="col">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2115/2115001.png" class="img_clases" alt="">
-                            <p class="container_text">Dirigido a personas que nunca han patinado o tienen nociones de patinaje sobre ruedas y desean aprender las técnicas básicas del patinaje sobre hielo, tales como el deslizamiento.</p> 
+                            <img src="https://cdn-icons-png.flaticon.com/512/2115/2115001.png" class="img_clases" alt="foto nivel inicial">
+                            <p class="container_text mt-1 mb-1">Dirigido a personas que nunca han patinado o tienen nociones de patinaje sobre ruedas y desean aprender las técnicas básicas del patinaje sobre hielo, tales como el deslizamiento.</p> 
                             <button class="btn_card">Conocé más</button>
                         </div>
                     </div>
                     <div class="grid_item">
                         <div class="col">
-                            <h3 class="second_title"> Nivel Medio</h3>
+                            <h3 class="second_title fw-normal pb-3"> Nivel Medio</h3>
                         </div>
                         <div class="col">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2115/2115036.png" class="img_clases" alt="">
-                            <p class="container_text">En estos niveles se aprenden los elementos básicos del patinaje, tales como: pasos, giros, piruetas y saltos. Se perfeccionan las técnicas necesarias para acceder al nivel avanzado.</p> 
+                            <img src="https://cdn-icons-png.flaticon.com/512/2115/2115036.png" class="img_clases" alt="foto nivel medio">
+                            <p class="container_text mt-1 mb-1">En estos niveles se aprenden los elementos básicos del patinaje, tales como: pasos, giros, piruetas y saltos. Se perfeccionan las técnicas necesarias para acceder al nivel avanzado.</p> 
                             <button class="btn_card">Conocé más</button>
                         </div>
                     </div>
                     <div class="grid_item">
                         <div class="col">
-                            <h3 class="second_title"> Nivel Avanzado</h3>
+                            <h3 class="second_title fw-normal pb-3"> Nivel Avanzado</h3>
                         </div>
                         <div class="col">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2115/2115023.png" class="img_clases" alt="">
-                            <p class="container_text">En este nivel se trabajarán todos los saltos simples y dobles, incluido el Axel y las principales piruetas básicas necesarias para la competición a través de coreografías.</p> 
+                            <img src="https://cdn-icons-png.flaticon.com/512/2115/2115023.png" class="img_clases" alt="foto nivel avanzado">
+                            <p class="container_text mt-1 mb-1">En este nivel se trabajarán todos los saltos simples y dobles, incluido el Axel y las principales piruetas básicas necesarias para la competición a través de coreografías.</p> 
                             <button class="btn_card">Conocé más</button>
                         </div>
                     </div>
@@ -79,7 +84,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer pt-4">
         <div class="footer_items text-center">
             <div class="container">
                 <div class="row">
@@ -87,7 +92,7 @@
                         <p class="footer_text">Encontranos en:</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row pb-2">
                     <div class="col">
                         <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/717/717392.png" alt="" class="footer_items" style="width: 25px"/></a>
                         <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/747/747374.png" alt="" class="footer_items" style="width: 25px"/></a>
@@ -95,11 +100,11 @@
                 </div>       
             </div>
         </div>
-        <div class="footer_copyright text-center">
+        <div class="footer_copyright text-center pt-3">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <p>© Copyright 2022 Escuela On Ice</p>
+                        <p>© Copyright 2022 Escuela On Ice | Creada por Xiomara Stochetta</p>
                     </div>
                 </div>
             </div>

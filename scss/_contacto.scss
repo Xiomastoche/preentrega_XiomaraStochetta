@@ -1,0 +1,32 @@
+.container_contact_item {
+    width: 50px;
+    padding-top: 3rem;
+    margin: auto;
+}
+
+.form {
+    padding-top: 1.5rem;
+    display: block;
+
+    &-control {
+        font-size: $font-size-text;
+        width: $maxwidth;
+        font-family: $fontSegoe;
+        padding-bottom: 0.2rem;
+        padding-left: 0.5rem;
+        padding-top: 0.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    &-button {
+        width: $maxwidth;
+        font-size: $font-size-text;
+        font-family: $fontSegoe;
+        padding-top: 0.6rem;
+        padding-bottom: 0.5rem;
+        background-color: $black;
+        border-radius: 0.5rem;
+        color: $white;
+        cursor: pointer;
+    }
+}

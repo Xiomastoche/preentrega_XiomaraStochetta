@@ -1,0 +1,50 @@
+header {
+    background: linear-gradient(to left, $primary-color, $secondary-color);
+    width: $maxwidth;
+    z-index: 1;
+    box-shadow: $box-shadow;
+}
+
+body {
+    width: $maxwidth;
+    height: 100vh;
+}
+
+main {
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+
+img {
+    max-width: $maxwidth;
+}
+
+.second_title {
+    font-size: 24px;
+    font-family: $fontSegoe;
+} 
+
+.container_text {
+    font-size: $font-size-text;
+    font-family: $fontSegoe;
+    padding: 0.8rem;
+    margin-bottom: 30px;
+
+    @include destok {
+        font-size: 16px;
+    }
+}
+
+footer {
+    background-color: $secondary-color;
+    box-shadow: $box-shadow;
+}
+  
+.footer_text {
+    font-family: $fontSegoe;
+    font-size: 13px;
+}
+
+.footer_copyright {
+    @extend .footer_text
+}

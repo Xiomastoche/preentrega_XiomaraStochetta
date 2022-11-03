@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5625/5625805.png" type="image/x-icon"/>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Escuela On Ice</title>
+    <meta name="description" content="Nosotros, Escuela On Ice. Conoce al equipo de profesores de nuestra escuela de patin sobre hielo.">
+    <meta name="keywords" content="escuela, nosotros, equipo, profesores de patin, escuela on ice, patinaje artistico, faph, clases, patin sobre hielo, patinar">
+    <title>Escuela On Ice| Nosotros</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar sticky-top navbar-expand-md">
-          <div class="container">
+    <header class="header fixed-top px-2">
+        <nav class="navbar navbar-expand-md">
+          <div class="container-fluid">
             <a class="navbar-brand" href="#">
               <img src="./imagenes/logopatines.png" alt="" width="230" style="vertical-align:top"/>
             </a>
@@ -22,11 +24,11 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-center px-2">
-                    <li><a class="nav_link" href="index.html">Inicio</a></li>
-                    <li><a class="nav_link" href="Nosotros.html">Nosotros</a></li>
-                    <li><a class="nav_link" href="Clases.html">Clases</a></li>
-                    <li><a class="nav_link" href="Tarifasyhorarios.html">Tarifas y horarios</a></li>
-                    <li><a class="nav_link" href="Contacto.html">Contacto</a></li>
+                    <li class="navbar-nav_item"><a class="navbar-nav_link" href="index.html">Inicio</a></li>
+                    <li class="navbar-nav_item"><a class="navbar-nav_link" href="Nosotros.html">Nosotros</a></li>
+                    <li class="navbar-nav_item"><a class="navbar-nav_link" href="Clases.html">Clases</a></li>
+                    <li class="navbar-nav_item"><a class="navbar-nav_link" href="Tarifasyhorarios.html">Tarifas y horarios</a></li>
+                    <li class="navbar-nav_item"><a class="navbar-nav_link" href="Contacto.html">Contacto</a></li>
                 </ul>
             </div>
           </div>
@@ -34,30 +36,50 @@
     </header>
 
     <main>
-        <section class="second_section">
-            <div class="container-fluid">
-                <div class="row text-center">
-                    <div class="col">
-                        <h2 class="first-title">Sobre nosotros</h2>
+        <section class="second_section pt-5">
+            <div class="container">
+                <div class="row p-md-3">
+                    <div class="col-md-6 text-center">
+                        <img src="./imagenes/nosotros.JPG" alt="alumna practicando" width="500px" class="img rounded-2">
                     </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <img src="./imagenes/nos2.jpg" alt="" class="img_nosotros">
-                    </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6 text-start bg-primary bg-opacity-25 rounded-1 shadow-sm">
+                        <h2 class="second-title px-2 pt-5"> Escuela On Ice</h2>
                         <p class="container_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, voluptas perspiciatis adipisci pariatur nesciunt officia totam! Praesentium vitae nulla delectus, ad voluptate fugiat fugit magni. Qui cupiditate maxime obcaecati itaque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora quasi eligendi provident. </p> 
                     </div>
-                    <div class="col-md-4">
-                        <img src="./imagenes/nos3.jpg" alt="" class="img_nosotros">
+                </div>
+            </div>
+            <div class="container pt-5 pb-4">
+                <div class="row px-md-5">
+                    <div class="col">
+                        <h2 class="second-title text-start fs-2 pb-0">EL EQUIPO</h2>
+                        <hr class="line_divider">
                     </div>
                 </div>
-                
+                <div class="row text-center">
+                    <div class="col-md-4 pt-5">
+                        <img src="./imagenes/nos1.JPG" class="img_team shadow rounded-1" width="250px" alt="Profe Sofia">
+                        <p class="fw-normal text-center text-black fs-3 pt-2">Sofía</p>
+                        <p class="card-text"><small class="text-muted">Jueza Nacional FAPH.</small></p>
+                        <p class="card-text"><small class="text-muted">Campeona Nacional PPM 2016.</small></p>
+                    </div>
+                    <div class="col-md-4 pt-5">
+                        <img src="./imagenes/nos2.JPG" class="img_team shadow rounded-1" width="250px" alt="Profe Mara">
+                        <p class="fw-normal text-center text-black fs-3 pt-2">Mara</p>
+                        <p class="card-text"><small class="text-muted">Jueza Nacional FAPH.</small></p>
+                        <p class="card-text"><small class="text-muted">Campeona Nacional Juvenile 2015.</small></p>
+                    </div>
+                    <div class="col-md-4 pt-5">
+                        <img src="./imagenes/nos3.jpg" class="img_team shadow rounded-1" width="250px" alt="Profe Juan">
+                        <p class="fw-normal text-center text-black fs-3 pt-2">Juan</p>
+                        <p class="card-text"><small class="text-muted">Expatinador Internacional.</small></p>
+                        <p class="card-text"><small class="text-muted">Campeon Nacional PPM 2012.</small></p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer pt-4">
         <div class="footer_items text-center">
             <div class="container">
                 <div class="row">
@@ -65,7 +87,7 @@
                         <p class="footer_text">Encontranos en:</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row pb-2">
                     <div class="col">
                         <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/717/717392.png" alt="" class="footer_items" style="width: 25px"/></a>
                         <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/747/747374.png" alt="" class="footer_items" style="width: 25px"/></a>
@@ -73,11 +95,11 @@
                 </div>       
             </div>
         </div>
-        <div class="footer_copyright text-center">
+        <div class="footer_copyright text-center pt-3">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <p>© Copyright 2022 Escuela On Ice</p>
+                        <p>© Copyright 2022 Escuela On Ice | Creada por Xiomara Stochetta</p>
                     </div>
                 </div>
             </div>

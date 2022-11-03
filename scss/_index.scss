@@ -1,0 +1,55 @@
+.first_section {
+    background-image: url(../imagenes/backhielo.PNG);
+    height: 300px;
+    padding: 8rem 0 0 0;
+    width: $maxwidth;
+
+    &-title {
+        font-size: 28px;
+        font-family: $fontMonserrat;
+        margin-top: 1.2rem;
+        color: $black;
+        text-shadow: $text-shadow;
+
+        @include tablet {
+            font-size: 35px;
+        }
+
+        @include destok {
+            font-size: 45px;
+        }
+    } 
+
+    @include tablet {
+        background-image: url(../imagenes/patin2.jpg);
+        max-width: $maxwidth;
+        background-size: cover;
+        height: 520px;
+        padding-top: 200px;
+        background-position: center;
+    }
+}
+
+.img_beneficios {
+    width: 80px;
+}
+
+.btn_card {
+    text-decoration: none;
+    align-items: center;
+    background: $blue-dark;
+    color: $white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: $font-size-text;
+    cursor: pointer;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.img_patines {
+    filter: $drop-shadow;
+}

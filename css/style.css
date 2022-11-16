@@ -75,6 +75,7 @@ footer {
   color: black;
   text-transform: uppercase;
   text-decoration: none;
+  max-width: 100%;
 }
 @media (min-width: 768px) {
   .navbar-nav_link {
@@ -83,7 +84,19 @@ footer {
 }
 .navbar-nav_link:hover {
   color: white;
-  opacity: 2;
+}
+.navbar-nav_link:after {
+  content: "";
+  position: absolute;
+  width: 2%;
+  height: 1px;
+  display: block;
+  transition: all 0.3s ease;
+  bottom: 35%;
+}
+.navbar-nav_link:hover::after {
+  height: 2px;
+  background-color: white;
 }
 
 .first_section {

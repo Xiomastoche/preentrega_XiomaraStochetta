@@ -2,8 +2,24 @@
     width: 500px;
 }
 
-.line_divider {
-    height: 8px;
-    width: 10%;
-    background-color: $blue-dark;
+.img_escuela {
+    width:500px;
+}
+
+.img_line {
+    visibility: hidden;
+    display: none;
+
+    @include tablet {
+        visibility: visible;
+        display: block;
+    }
+}
+
+.img_hidden {
+    visibility: visible;
+
+    @include tablet {
+        visibility: hidden;
+    }
 }

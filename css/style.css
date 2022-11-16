@@ -5,7 +5,7 @@
 }
 
 header {
-  background: linear-gradient(to left, rgb(8, 154, 194), lightblue);
+  background: linear-gradient(to left, rgb(16, 167, 249), lightblue);
   width: 100%;
   z-index: 1;
   box-shadow: 0 0 4px 0 rgb(159, 158, 158);
@@ -33,7 +33,7 @@ img {
 .container_text {
   font-size: 15px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 0.8rem;
+  padding: 0.5rem;
   margin-bottom: 30px;
 }
 @media (min-width: 1024px) {
@@ -147,10 +147,28 @@ footer {
   width: 500px;
 }
 
-.line_divider {
-  height: 8px;
-  width: 10%;
-  background-color: rgb(25, 25, 113);
+.img_escuela {
+  width: 500px;
+}
+
+.img_line {
+  visibility: hidden;
+  display: none;
+}
+@media (min-width: 768px) {
+  .img_line {
+    visibility: visible;
+    display: block;
+  }
+}
+
+.img_hidden {
+  visibility: visible;
+}
+@media (min-width: 768px) {
+  .img_hidden {
+    visibility: hidden;
+  }
 }
 
 table {
@@ -229,10 +247,8 @@ th, td {
   }
 }
 
-.container_contact_item {
-  width: 50px;
-  padding-top: 3rem;
-  margin: auto;
+.img_info {
+  filter: drop-shadow(0 0 15px rgb(159, 158, 158));
 }
 
 .form {
